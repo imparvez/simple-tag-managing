@@ -450,6 +450,10 @@ h1 {
     color: #155279;
 }
 
+ul {
+    overflow: hidden;
+}
+
 ul li {
     float: left;
     margin: 10px;

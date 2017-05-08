@@ -21,5 +21,17 @@ var tag = {
 		var deleteButton = document.createElement('i');
 	    deleteButton.className = 'fa fa-times';
 	    return deleteButton;
+	},
+	deleteTag: function(){
+		var tagsUl = document.querySelector('ul');
+		tagsUl.addEventListener('click', function(event) {
+			console.log(event);
+	        var elementClicked = event.target;
+	        if (elementClicked.className === 'fa fa-times') {
+	        	console.log('YES');
+	        }
+	    });
 	}
 }
+
+tag.deleteTag();
