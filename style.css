@@ -398,6 +398,7 @@ template {
 
 * {
     font-family: 'Roboto', sans-serif;
+    outline: none;
 }
 
 .wrapper {
@@ -405,6 +406,65 @@ template {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+}
+
+h1 {
+    font-family: 'Indie Flower', cursive;
+    color: #3498db;
+    font-size: 40px;
+}
+
+.tag-manager-container {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.fa.fa-search {
+    position: absolute;
+    top: 34%;
+    left: 9%;
+    color: #3498db;
+}
+
+.input-text {
+    padding: 15px 35px;
+    border: none;
+    border-bottom: 1px solid #3498db;
+}
+
+.input-text:active {
+    outline: none;
+}
+
+.fa.fa-plus {
+    position: absolute;
+    top: 34%;
+    right: 9%;
+    color: #3498db;
+}
+
+.fa.fa-times {
+    margin-left: 5px;
+    color: #155279;
+}
+
+ul li {
+    float: left;
+    margin: 10px;
+    list-style: none;
+    padding: 5px 10px;
+    background: #1094ea;
+    border: 1px solid #296994;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px #296994;
+    transition: 0.05s all ease-out;
+}
+
+ul li:hover {
+    box-shadow: 0px 13px 15px #296994;
 }
 
 

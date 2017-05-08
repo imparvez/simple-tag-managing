@@ -5,6 +5,7 @@
 	<title>Simple Tag Management Tool</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,10 +14,13 @@
 			<h1>Simple Tag Manager</h1>
 			<div class="tag-manager-container">
 				<i class="fa fa-search" aria-hidden="true"></i>
-				<input type="text" placeholder="Filter">
-				<i class="fa fa-plus" aria-hidden="true"></i>
+				<input id="inputTags" class="input-text" type="text" placeholder="Filter">
+				<i class="fa fa-plus" aria-hidden="true" onclick="tag.addTags()"></i>
 			</div>
+			<ul></ul>
 		</div>
 	</div>
+
+	<script src="script.js"></script>
 </body>
 </html>
