@@ -460,7 +460,7 @@ ul li {
     list-style: none;
     padding: 5px 10px;
     background: #1094ea;
-    border: 1px solid #296994;
+    border: 1px dashed #296994;
     color: #fff;
     cursor: pointer;
     box-shadow: 0px 3px 5px #296994;
