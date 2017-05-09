@@ -22,16 +22,22 @@ var tag = {
 	    deleteButton.className = 'fa fa-times';
 	    return deleteButton;
 	},
-	deleteTag: function(){
+	deleteTags: function(pos){
+		this.tags.splice(pos, 1);
+		this.displayTags(this.tags);
+	},
+	setUpEventListeners: function(){
 		var tagsUl = document.querySelector('ul');
 		tagsUl.addEventListener('click', function(event) {
 			console.log(event);
 	        var elementClicked = event.target;
 	        if (elementClicked.className === 'fa fa-times') {
-	        	console.log('YES');
+	        	// this.tags.splice(parseInt(elementClicked.parentNode.id), 1);
+	        	var pos = parseInt(elementClicked.parentNode.id);
+	        	tag.deleteTags(pos);
 	        }
 	    });
 	}
 }
 
-tag.deleteTag();
+tag.setUpEventListeners();
